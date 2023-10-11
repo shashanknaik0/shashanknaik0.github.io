@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOSANGELES MOUNTAINS</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="home" class="page">
+            <div id="header1" class="header content">
+                <a href="#home">
+                    <img class="logo" src="/image/logo1.PNG" alt="">
+                </a>
+    
+                <div class="link">
+                    <a href="#history">01. HISTORY</a>
+                    <a href="#team">02. TEAM</a>
+                </div>
+            </div>
+            <img class="pag1-img" id="home-logo" src="/image/logo2.PNG" alt="">
+            <img class="pag1-img" id="mountain" src="/image/fbg1.png" alt="">
+    </div>
+    <div id="history" class="page">
+        <div class="header2-container">
+            <div id="header2" class="header content" >
+                <a href="#home">
+                    <div class="logo-container">
+                        <img class="logo" style="border:var(--secondary-color) 1px solid; border-radius: 50%;"  src="/image/logo1.PNG" alt="">
+                        <img class="logo" src="/image/logo2.PNG" alt="">
+                    </div>
+                </a>
+                
+                <div class="link">
+                    <a style="color: var(--primary-color);" href="#history">01. HISTORY</a>
+                    <a style="color: var(--primary-color);" href="#team">02. TEAM</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="bignum">
+                01<span>HISTORY</span>. 
+            </div>
+            <div class="h-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. At dicta perspiciatis voluptas enim. Facere nobis praesentium, vel exercitationem, dicta, corporis at maxime beatae omnis architecto corrupti alias sunt obcaecati ab.
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-img">
+                <img class="hi-foot-img" src="/image/sm1.PNG" onpointerenter="currentSlide(1)" alt="">
+                <img class="hi-foot-img" src="/image/bg4.PNG" onpointerenter="currentSlide(2)" alt="">
+                <img class="hi-foot-img" src="/image/sm1.PNG" onpointerenter="currentSlide(3)" alt="">
+                <img class="hi-foot-img" src="/image/bg4.PNG" onpointerenter="currentSlide(4)" alt="">
+            </div>
+            <div style="text-align:center;margin-bottom:var(--m-margin);">
+                <span class="dot" ></span> 
+                <span class="dot" ></span> 
+                <span class="dot" ></span> 
+                <span class="dot" ></span> 
+            </div>
+        </div>
+    </div>
+    <div id="team" class="page">
+        <div id="team-header">
+            <div class="content">
+                <div class="bignum" style="display: inline-block;margin: 20px;color: var(--secondary-color-trans);">
+                    02<span>CLIMB</span>. 
+                    
+                    <div class="bignum-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veniam, aut, nihil sapiente perspiciatis doloremque, provident explicabo officia in enim minus hic asperiores quam iusto ullam. Magnam sint quisquam numquam?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="team-nav">
+            <div class="content">
+                <a class="teamnav teamnav-active" href="#mountain1">MOUNTAIN 1</a>
+                <a class="teamnav" href="#mountain2">MOUNTAIN 2</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="schedule">
+                <h2>SCHEDULE</h2>
+                <div>
+                    <table>
+                        <tr>
+                            <td>25 Nov 2023</td>
+                            <td>hello world</td>
+                        </tr>
+                        <tr>
+                            <td>26 Nov 2023</td>
+                            <td>hello world</td>
+                        </tr>
+                        <tr>
+                            <td>27 Nov 2023</td>
+                            <td>hello world</td>
+                        </tr>
+                        <tr>
+                            <td>28 Nov 2023</td>
+                            <td>hello world</td>
+                        </tr>
+                        <tr>
+                            <td>29 Nov 2023</td>
+                            <td>hello world</td>
+                        </tr>
+                        <tr>
+                            <td>30 Nov 2023</td>
+                            <td>hello world</td>
+                        </tr><tr>
+                            <td>30 Nov 2023</td>
+                            <td>hello world</td>
+                        </tr><tr>
+                            <td>30 Nov 2023</td>
+                            <td>hello world</td>
+                        </tr><tr>
+                            <td>30 Nov 2023</td>
+                            <td>hello world</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="team-footer" class="footer">
+            <div  class="content" >
+                <a href="#home">
+                    <div class="logo-container">
+                        <img class="logo t-foot-logo" style="border:var(--secondary-color) 1px solid; border-radius: 50%;"  src="/image/logo1.PNG" alt="">
+                        <img class="logo t-foot-logo" src="/image/logo2.PNG" alt="">
+                    </div>
+                </a>
+                <span class="copyright">COPY RIGHT 2023. ALL RIGHTS RESERVED</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    currentSlide(1)
+    function currentSlide(n) {
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        dots[n-1].className += " active";
+    }
+</script>
+
+</html>

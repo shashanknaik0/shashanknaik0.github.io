@@ -1,0 +1,182 @@
+:root {
+    --a-primary: #25DAC5;
+    --a-secondary: #482BE7;
+    --a-third: #E93A7D;
+
+    --background-light: #FFFFFF;
+    --background-dark: #2F1893;
+
+    --colors-grey: #878787;
+    --colors-heading: #1E0E62;
+    --colors-text-hover: #ffffff82;
+    --colors-white: #FFFFFF;
+
+    --twitter:#1DA1F2;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-dark);
+}
+
+.container {
+    margin: auto;
+    width: 70%;
+}
+
+.header {
+    width: 100%;
+    height: 40px;
+    color: var(--colors-white);
+    font-size: x-large;
+    font-style: normal;
+    font-weight: 500;
+    padding-top: 40px;
+}
+
+.header span {
+    display: inline-block;
+    padding-top: 5px;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    font-size: medium;
+}
+
+.link,
+.nav-button {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.active {
+    color: var(--colors-text-hover);
+}
+
+.link:hover {
+    color: var(--colors-text-hover);
+}
+
+.nav-button {
+    background-color: var(--a-third);
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-button:hover {
+    opacity: 0.8;
+}
+
+.content {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info {
+    color: var(--colors-white);
+    padding-top: 30px;
+    width: 50%;
+}
+
+.info-head {
+    width: 424px;
+    height: 200px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.info-body {
+    width: 320px;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.learn-button {
+    color: var(--colors-white);
+    background-color: var(--a-third);
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.learn-button:hover {
+    opacity: 0.8;
+}
+
+.signup {
+    width: 50%;
+}
+
+#signup-form {
+    float: right;
+    width: 410px;
+    height: 470px;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: var(--background-light);
+    text-align: center;
+}
+#signup-form h1{
+    color: var(--colors-heading);
+}
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--colors-grey);
+    box-sizing: border-box;
+    color: var(--colors-grey);
+    border-radius: 50px;
+}
+
+#signin-button{
+    background-color: var(--a-secondary);
+}
+#twitter-button{
+    background-color: var(--twitter);
+}
+
+#signup-form div{
+    font-size: small;
+    color: var(--colors-grey);
+    margin: 15px 0;
+}
+#signup-form span{
+    letter-spacing: -1px;
+}
+
+#signup-form button {
+    color: var(--colors-white);
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50px;  
+}
+#signup-form a{
+    color: var(--a-primary);
+}
+
+#signup-form button:hover {
+    opacity: 0.8;
+}
